@@ -1,23 +1,25 @@
-# phpstorm-library-plugin
+# phpstorm-swephp-plugin
 
-[![Build Status](https://travis-ci.org/artspb/phpstorm-library-plugin.svg?branch=master)](https://travis-ci.org/artspb/phpstorm-library-plugin)
+Adds IDE support to PhpStorm for the Swiss Ephemeris PHP extension which is found here:
 
-The repository is intended to demonstrate how to use a new "libraryRoot" API of PhpStorm. It consists of two parts:
+https://github.com/cyjoelchen/php-sweph
 
-1. `plugin.xml` which contains a simple extension point implementation:
+### Installation:
+- [Download the JAR file.](https://github.com/arcpointgroup/phpstorm-library-plugin/raw/master/plugin/phpstorm-swephp-plugin.jar)
+- Open PhpStorm and install a plugin from disk, selecting the downloaded JAR.
+- Restart PhpStorm.
 
-    <extensions defaultExtensionNs="com.jetbrains.php">
-        <libraryRoot id="library" path="/library/" runtime="false"/>
-    </extensions>
+You will see the stub file in your Project window:
 
-2. `library` directory with PHP-files.
+![](external-libraries.png)
 
-To turn these files into a plugin you need to simply zip content of the `plugin` directory:
+When coding, you will see auto-complete suggestions from PhpStorm:
 
-    zip -r phpstorm-library-plugin.jar *
+![](phpstorm-swephp.png)
 
-<img src="external-libraries.png" width="212px" align="right" />
-If you install the plugin into PhpStorm you'll find PHP-files attached as an external library.
+### Updates:
 
-Note: when you implement your own plugin don't forget to change the directory name from `library`
-to an appropriate unique name e.g. `CodeIgniter`.
+A stub file is maintained in the extension's repository.
+All SE library updates should be made to that file which can then be copied into this repository as needed.
+
+Don't forget to update the release support in `plugin.xml`.
