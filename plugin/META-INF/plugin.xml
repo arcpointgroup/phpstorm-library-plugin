@@ -1,21 +1,20 @@
 <idea-plugin version="2">
-  <id>me.artpsb.idea.plugin.library</id>
-  <name>Library</name>
-  <version>0.2</version>
-  <vendor email="contact@artspb.me" url="https://artspb.me">Artem Khvastunov</vendor>
+  <id>me.arcpointgroup.idea.plugin.swephp</id>
+  <name>Swiss Ephemeris</name>
+  <version>0.1</version>
+  <vendor email="admin@arcpointgroup.com" url="https://arcpointgroup.com/">Arc Point Group</vendor>
 
   <description><![CDATA[
-    Provides support of the Library.
+    Provides IDE support for the Swiss Ephemeris PHP extension.
+
+    The Swiss Ephemeris PHP extension can be found here:
+    https://github.com/cyjoelchen/php-sweph
   ]]></description>
 
   <change-notes><![CDATA[
-    <h3>0.2</h3>
-    <ul>
-      <li>Release upload test.</li>
-    </ul>
     <h3>0.1</h3>
     <ul>
-      <li>Initial support.</li>
+      <li>Initial support of extension tagged @ 4.0.5.</li>
     </ul>
   ]]>
   </change-notes>
@@ -26,6 +25,6 @@
   <depends>com.jetbrains.php</depends>
 
   <extensions defaultExtensionNs="com.jetbrains.php">
-    <libraryRoot id="library" path="/library/" runtime="false"/>
+    <libraryRoot id="swephp" path="/swephp/" runtime="false"/>
   </extensions>
 </idea-plugin>
