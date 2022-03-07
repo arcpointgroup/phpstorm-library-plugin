@@ -20,6 +20,10 @@ When coding, you will see auto-complete suggestions from PhpStorm:
 ### Updates:
 
 A stub file is maintained in the extension's repository.
-All SE library updates should be made to that file which can then be copied into this repository as needed.
+All SE library updates should be made to that file which can then be copied into this repository as needed*.
+
+__* The constant definitions in this plugin are not supported by the core PHP file `gen_stub.php`
+which is used to generate the arginfo header files required by the extension.
+Changes to the extension's stub file must be manually applied to this plugin's stub (vs. copy-replace).__
 
 Don't forget to update the release support in `plugin.xml`.

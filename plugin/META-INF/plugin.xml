@@ -1,7 +1,7 @@
 <idea-plugin version="2">
   <id>me.arcpointgroup.idea.plugin.swephp</id>
   <name>Swiss Ephemeris</name>
-  <version>0.1</version>
+  <version>0.2</version>
   <vendor email="admin@arcpointgroup.com" url="https://arcpointgroup.com/">Arc Point Group</vendor>
 
   <description><![CDATA[
@@ -12,6 +12,11 @@
   ]]></description>
 
   <change-notes><![CDATA[
+    <h3>0.2</h3>
+    <ul>
+      <li>Added SE constants.</li>
+    </ul>
+
     <h3>0.1</h3>
     <ul>
       <li>Initial support of extension tagged @ 4.0.5.</li>
