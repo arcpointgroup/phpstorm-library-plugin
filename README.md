@@ -27,3 +27,10 @@ which is used to generate the arginfo header files required by the extension.
 Changes to the extension's stub file must be manually applied to this plugin's stub (vs. copy-replace).__
 
 Don't forget to update the release support in `plugin.xml`.
+
+To turn these files into a plugin:
+
+```
+cd plugin
+zip -r phpstorm-library-plugin.jar *
+```
