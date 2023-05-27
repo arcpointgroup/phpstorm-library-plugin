@@ -114,7 +114,7 @@ define('SEFLG_TOPOCTR', (32*1024));   // topocentric positions
 define('SEFLG_SIDEREAL', (64*1024));   // sidereal positions
 define('SEFLG_ICRS', (128*1024));  // ICRS (DE406 reference frame);
 
-define ('SEFLG_DPSIDEPS_1980' (256*1024)); // reproduce JPL Horizons * 1962 - today to 0.002 arcsec
+define ('SEFLG_DPSIDEPS_1980', (256*1024)); // reproduce JPL Horizons * 1962 - today to 0.002 arcsec
 define ('SEFLG_JPLHOR', SEFLG_DPSIDEPS_1980);
 define ('SEFLG_JPLHOR_APPROX', (512*1024)); // approximate JPL Horizons 1962 - today
 define ('SEFLG_CENTER_BODY', (1024*1024)); // calculate position of center of body (COB) of planet, not barycenter of its system
