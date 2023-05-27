@@ -105,7 +105,7 @@ define('SEFLG_SPEED3', 128);     // speed from 3 positions (do not use it', defi
 define('SEFLG_SPEED', 256);     	// high precision speed
 define('SEFLG_NOGDEFL', 512);     // turn off gravitational deflection
 define('SEFLG_NOABERR', 1024);    // turn off 'annual' aberration of light
-define('SEFLG_ASTROMETRIC', (SEFLG_NOABERR + SEFLG_NOGDEFL)) // astrometric positions
+define('SEFLG_ASTROMETRIC', (SEFLG_NOABERR + SEFLG_NOGDEFL)); // astrometric positions
 define('SEFLG_EQUATORIAL', (2*1024));    // equatorial positions are wanted
 define('SEFLG_XYZ', (4*1024));    // cartesian', not polar', coordinates
 define('SEFLG_RADIANS', (8*1024));    // coordinates in radians', not degrees
@@ -114,10 +114,10 @@ define('SEFLG_TOPOCTR', (32*1024));   // topocentric positions
 define('SEFLG_SIDEREAL', (64*1024));   // sidereal positions
 define('SEFLG_ICRS', (128*1024));  // ICRS (DE406 reference frame);
 
-define ('SEFLG_DPSIDEPS_1980' (256*1024)) // reproduce JPL Horizons * 1962 - today to 0.002 arcsec
+define ('SEFLG_DPSIDEPS_1980' (256*1024)); // reproduce JPL Horizons * 1962 - today to 0.002 arcsec
 define ('SEFLG_JPLHOR', SEFLG_DPSIDEPS_1980);
-define ('SEFLG_JPLHOR_APPROX', (512*1024)) // approximate JPL Horizons 1962 - today
-define ('SEFLG_CENTER_BODY', (1024*1024)) // calculate position of center of body (COB) of planet, not barycenter of its system
+define ('SEFLG_JPLHOR_APPROX', (512*1024)); // approximate JPL Horizons 1962 - today
+define ('SEFLG_CENTER_BODY', (1024*1024)); // calculate position of center of body (COB) of planet, not barycenter of its system
 
 define ('SE_AUNIT_TO_LIGHTYEAR', (1.0/63241.077088071));
 define ('SE_AUNIT_TO_PARSEC', (1.0/206264.8062471));
@@ -267,7 +267,7 @@ define('SE_SPLIT_DEG_ROUND_DEG', 4);
 define('SE_SPLIT_DEG_ZODIACAL', 8);
 define('SE_SPLIT_DEG_KEEP_SIGN', 16); // don't round to next sign', e.g. 29.9999999 will be rounded to 29d59m59s (or 29d59m or 29d);
 define('SE_SPLIT_DEG_KEEP_DEG', 32); // don't round to next degree e.g. 13.9999999 will be rounded to 13d59m59s (or 13d59m or 13d);
-define('SE_SPLIT_DEG_NAKSHATRA', 1024) // split into nakshatras
+define('SE_SPLIT_DEG_NAKSHATRA', 1024); // split into nakshatras
 
 // for heliacal functions
 define('SE_HELIACAL_RISING', 1);
