@@ -32,5 +32,5 @@ To turn these files into a plugin:
 
 ```
 cd plugin
-zip -r phpstorm-library-plugin.jar *
+zip -r phpstorm-swephp-plugin.jar *
 ```
